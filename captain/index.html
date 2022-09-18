@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lineup Randomizer| Captain Mode</title>
+    <link rel="stylesheet" href="../styles.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,400;0,700;1,300&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Graduate&display=swap" rel="stylesheet" />
+    <link rel="shortcut icon" type="image/png" href="../favicon.png" />
+  </head>
+
+  <body>
+    <div class="title-area">
+      <h1 class="header-title">Lineup Randomizer</h1>
+      <h2 class="header-captain-subtitle">Captain Mode</h2>
+      <p class="slate">11/18 8:20pm (NE vs ATL) 1 Game</p>
+      <p class="updated">Projection data last updated: 11/16 @ 7:30pm</p>
+      <nav class="nav-menu">
+        <a href="https://www.brandonvisokay.com/lineups/early/" class="nav-btn">Early</a>
+        <a href="https://www.brandonvisokay.com/lineups/late/" class="nav-btn">Late</a>
+        <a href="https://www.brandonvisokay.com/lineups/" class="nav-btn">Sunday Day</a>
+        <a href="https://www.brandonvisokay.com/lineups/captain/" class="nav-btn">Captain</a>
+      </nav>
+    </div>
+    <div class="container">
+      <div class="msgPlaceholder"></div>
+
+      <form id="ourForm" class="ourForm">
+        <div class="form-group">
+          <label class="ptsLabel" for="">Minimum Projected Points:</label>
+          <input id="minimumPtsInput" class="ptsInput" type="number" min="0" max="200" value="0" step="0.1" />
+        </div>
+
+        <div class="form-group">
+          <label class="maxLineupsLabel" for="maxLineups">Max Random Lineups to Search:</label>
+
+          <select name="maxLineups" id="maxLineups" class="maxLineupsInput">
+            <option value="25">25</option>
+            <option value="50000">50k</option>
+            <option value="250000" selected>250k</option>
+            <option value="1000000">1m</option>
+            <option value="5000000">5m</option>
+          </select>
+        </div>
+
+        <div class="starts-sits__container">
+          <div class="starts-sits__title-area">
+            <div class="starts-sits__title">Starts & Sits</div>
+            <button type="button" class="starts-sits__toggle">
+              <svg width="24" height="14" viewBox="0 0 24 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path id="Arrow" d="M13.0607 0.93934C12.4749 0.353553 11.5251 0.353553 10.9393 0.93934L1.3934 10.4853C0.807612 11.0711 0.807612 12.0208 1.3934 12.6066C1.97918 13.1924 2.92893 13.1924 3.51472 12.6066L12 4.12132L20.4853 12.6066C21.0711 13.1924 22.0208 13.1924 22.6066 12.6066C23.1924 12.0208 23.1924 11.0711 22.6066 10.4853L13.0607 0.93934ZM13.5 4V2H10.5V4H13.5Z" />
+              </svg>
+            </button>
+          </div>
+          <div class="starts-sits__inputs-container">
+            <div class="form-group">
+              <label class="sits1Label" for="sits1">Starting Captain:</label>
+              <select name="sits1" id="captainSelect" class="sits1Input"></select>
+            </div>
+
+            <div class="form-group">
+              <label class="sits1Label" for="sits1">Starting Flex1:</label>
+              <select name="sits1" id="flex1Select" class="sits1Input"></select>
+            </div>
+
+            <div class="form-group">
+              <label class="sits1Label" for="sits1">Starting Flex2:</label>
+              <select name="sits1" id="flex2Select" class="sits1Input"></select>
+            </div>
+
+            <div class="form-group">
+              <label class="sits1Label" for="sits1">Starting Flex3:</label>
+              <select name="sits1" id="flex3Select" class="sits1Input"></select>
+            </div>
+
+            <div class="form-group">
+              <label class="sits1Label" for="sits1">Starting Flex4:</label>
+              <select name="sits1" id="flex4Select" class="sits1Input"></select>
+            </div>
+
+            <div class="form-group">
+              <label class="sits1Label" for="sits1">Starting Flex5:</label>
+              <select name="sits1" id="flex5Select" class="sits1Input"></select>
+            </div>
+
+            <div class="form-group">
+              <label class="sits1Label" for="sits1">Bench Player 1:</label>
+              <select name="sits1" id="bench1Select" class="sits1Input"></select>
+            </div>
+
+            <div class="form-group">
+              <label class="sits1Label" for="sits1">Bench Player 2:</label>
+              <select name="sits1" id="bench2Select" class="sits1Input"></select>
+            </div>
+
+            <div class="starts-sits__btn-container">
+              <button type="button" class="starts-sits__clear">Clear Starts & Sits</button>
+              <button type="button" class="starts-sits__close">Close Menu</button>
+            </div>
+          </div>
+        </div>
+
+        <button type="submit" class="generate-button">Generate</button>
+
+        <div class="loading-container">
+          <div class="dots-loading">
+            <div></div>
+          </div>
+
+          <button type="button" class="cancel-button" type="button">Cancel</button>
+        </div>
+      </form>
+
+      <div class="lineupContainer" id="ourLineupContainer"></div>
+
+      <p class="" id="maxLimit"></p>
+    </div>
+
+    <script src="captain-player-data.js"></script>
+    <script src="../info.js"></script>
+    <script src="captain.js"></script>
+  </body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lineup Randomizer</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="players-listing.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,400;0,700;1,300&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Graduate&display=swap" rel="stylesheet" />
+    <link rel="shortcut icon" type="image/png" href="favicon.png" />
+  </head>
+
+  <body>
+    <div class="title-area">
+      <h1 class="header-title">Player List</h1>
+      <p class="updated">Projection data last updated: 11/16 @ 7:30pm</p>
+      <nav class="nav-menu">
+        <a href="https://www.brandonvisokay.com/lineups/early/" class="nav-btn">Early</a>
+        <a href="https://www.brandonvisokay.com/lineups/late/" class="nav-btn">Late</a>
+        <a href="https://www.brandonvisokay.com/lineups/" class="nav-btn">Sunday Day</a>
+        <a href="https://www.brandonvisokay.com/lineups/captain/" class="nav-btn">Captain</a>
+      </nav>
+    </div>
+    <div class="container">
+      <div class="listing">
+        <h2>All Sunday</h2>
+        <ul class="players-list"></ul>
+      </div>
+      <div class="listing">
+        <h2>Early</h2>
+        <ul class="early-players-list"></ul>
+      </div>
+      <div class="listing">
+        <h2>Late</h2>
+        <ul class="late-players-list"></ul>
+      </div>
+    </div>
+
+    <script src="player-data.js"></script>
+    <script src="/early/early-player-data.js"></script>
+    <script src="/late/late-player-data.js"></script>
+    <script src="players-listing.js"></script>
+  </body>
+</html>

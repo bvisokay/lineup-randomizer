@@ -1,0 +1,23 @@
+let captainPlayerData = [
+  { name: "	Green Bay Packers	", pos: "	DST	", salary: 4400, team: "	GB	", ppg: 1, proj: 9.3, cpp: 473.1 },
+  { name: "	Chicago Bears	", pos: "	DST	", salary: 3800, team: "	CHI	", ppg: 10, proj: 5.4, cpp: 703.7 },
+  { name: "	Mason Crosby	", pos: "	K	", salary: 4200, team: "	GB	", ppg: 1, proj: 7.6, cpp: 552.6 },
+  { name: "	Cairo Santos	", pos: "	K	", salary: 4000, team: "	CHI	", ppg: 1, proj: 6.5, cpp: 615.4 },
+  { name: "	Aaron Rodgers	", pos: "	QB	", salary: 10600, team: "	GB	", ppg: 5.7, proj: 18.7, cpp: 566.8 },
+  { name: "	Justin Fields	", pos: "	QB	", salary: 10200, team: "	CHI	", ppg: 14.64, proj: 15, cpp: 680.0 },
+  { name: "	Aaron Jones	", pos: "	RB	", salary: 12200, team: "	GB	", ppg: 10.6, proj: 16.9, cpp: 721.9 },
+  { name: "	David Montgomery	", pos: "	RB	", salary: 9000, team: "	CHI	", ppg: 8, proj: 14.6, cpp: 616.4 },
+  { name: "	AJ Dillon	", pos: "	RB	", salary: 8400, team: "	GB	", ppg: 20.1, proj: 14, cpp: 600.0 },
+  { name: "	Khalil Herbert	", pos: "	RB	", salary: 5200, team: "	CHI	", ppg: 11.3, proj: 5.1, cpp: 1019.6 },
+  { name: "	Cole Kmet	", pos: "	TE	", salary: 2000, team: "	CHI	", ppg: 0, proj: 7.6, cpp: 263.2 },
+  { name: "	Robert Tonyan	", pos: "	TE	", salary: 6800, team: "	GB	", ppg: 6.6, proj: 7.1, cpp: 957.7 },
+  { name: "	Darnell Mooney	", pos: "	WR	", salary: 7800, team: "	CHI	", ppg: 1.8, proj: 13, cpp: 600.0 },
+  { name: "	Allen Lazard	", pos: "	WR	", salary: 9400, team: "	GB	", ppg: 0, proj: 9.9, cpp: 949.5 },
+  { name: "	Randall Cobb	", pos: "	WR	", salary: 5400, team: "	GB	", ppg: 3.4, proj: 7.1, cpp: 760.6 },
+  { name: "	Sammy Watkins	", pos: "	WR	", salary: 7200, team: "	GB	", ppg: 4.8, proj: 7, cpp: 1028.6 },
+  { name: "	Romeo Doubs	", pos: "	WR	", salary: 5600, team: "	GB	", ppg: 8.8, proj: 6.5, cpp: 861.5 },
+  { name: "	Christian Watson	", pos: "	WR	", salary: 4600, team: "	GB	", ppg: 6.1, proj: 5.8, cpp: 793.1 },
+  { name: "	Dante Pettis	", pos: "	WR	", salary: 4800, team: "	CHI	", ppg: 12.1, proj: 5.6, cpp: 857.1 },
+  { name: "	Equanimeous St. Brown	", pos: "	WR	", salary: 5800, team: "	CHI	", ppg: 8.8, proj: 5.4, cpp: 1074.1 },
+  { name: "	Byron Pringle	", pos: "	WR	", salary: 5000, team: "	CHI	", ppg: 3.2, proj: 4.3, cpp: 1162.8 }
+]
