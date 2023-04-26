@@ -53,15 +53,6 @@ addStartSelectOptions(teSelect, "TE")
 addStartSelectOptions(dstSelect, "DST")
 
 // Add bench select options
-function addBenchSelectOptions(selectVariable) {
-  //console.log(trimmedPlayerData)
-  selectVariable.innerHTML = `
-  <option value="">Select</option>
-  ${trimmedPlayerData.map(player => {
-    return `<option value="${player.name}">${player.name}</option>`
-  })}
-  `
-}
 addBenchSelectOptions(bench1Select)
 addBenchSelectOptions(bench2Select)
 
@@ -100,21 +91,13 @@ msgPlaceholder.addEventListener("click", e => {
 
 ourForm.addEventListener("submit", handleClick)
 
-function goTop() {
-  document.body.scrollTop = 0 // For Safari
-  document.documentElement.scrollTop = 0 // For Chrome, Firefox, IE and Opera
-}
-
 function handleClick(e) {
-  // ensure button click working
-  //console.log("button clicked")
-
-  // prevents page reload on form submit;
   e.preventDefault()
 
   // clear existing message if there is one
   msgPlaceholder.innerHTML = ""
 
+  // grab values from form
   let qbStart = qbSelect.value
   let rbStart = rbSelect.value
   let wrStart = wrSelect.value
